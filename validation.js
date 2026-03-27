@@ -20,7 +20,6 @@ password.addEventListener('input', () => {
 confirm_password.addEventListener('input', () => {
     valiarCampo(confirm_password, (v) => v === password.value && v !== "" ? {valido: true} : {valido: false, mensagem: 'As senhas não conferem'});
 });
-
 function valiarCampo(input, funcaoValiar) {
     const mgsError = document.getElementById(input.id + '-error');
     const resultado = funcaoValiar(input.value);
