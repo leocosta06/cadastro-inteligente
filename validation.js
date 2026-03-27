@@ -8,7 +8,6 @@ const btnLogin = document.getElementById('login');
 const btnText = document.getElementById('btn-text');
 const spinner = document.getElementById('spinner');
 const successMsg = document.getElementById('success-msg');
-
 nome.addEventListener("blur", () => valiarCampo(nome, (v) => v.trim().length >= 3 ? {valido: true} : {valido: false, mensagem: 'Mínimo 3 caracteres'}));
 email.addEventListener("blur", () => valiarCampo(email, (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? {valido: true} : {valido: false, mensagem: 'E-mail inválido'}));
 
